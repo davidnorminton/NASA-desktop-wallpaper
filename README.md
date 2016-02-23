@@ -6,6 +6,7 @@ Notes :
 <ul>
     <li> *Currently this script is only working with the linux gnome desktop enviroment</li>
     <li> *Requires <a href="http://www.crummy.com/software/BeautifulSoup/">BeautifulSoup</a></li>
+    <li> *Also requires python 2.6</li>
 </ul>
 This script works on the command line with the following options:<br />
 <pre>
