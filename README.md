@@ -7,20 +7,21 @@ Notes :
     <li> *Currently this script is only working with the linux gnome desktop enviroment</li>
     <li> *Requires <a href="http://www.crummy.com/software/BeautifulSoup/">BeautifulSoup</a></li>
 </ul>
-This script works on the command line with the following options:
+This script works on the command line with the following options:<br />
 <code>
-// some a help menu and show number of possible images to add
- $ python -h
+// some a help menu and show number of possible images to add<br />
+ $ python -h<br />
 </code>
 <code>
-// set wallpaper to a specific number
- $ python - n <a number> 
+// set wallpaper to a specific number<br />
+ $ python - n <a number> <br />
 </code>
 <p>
 This script can also run on start up by adding a file called "wallpaper.desktop" placed in the directory 
 "~/.config/autostart"
 </p>
 // Add the following lines to this file :
+<pre>
 <code>
 [Desktop Entry]
 Encoding=UTF-8
@@ -35,5 +36,6 @@ Categories=
 X-GNOME-Autostart-enabled=true
 X-GNOME-Autostart-Delay=1
 </code>
+</pre>
 <h3>Future updates:</h3>
 <p>Will include improved performance, multiple os detection, and list image titles.</p>
