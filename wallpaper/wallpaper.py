@@ -7,6 +7,7 @@
 import nasa
 import set_wallpaper
 import sys
+import os
 
 
 #url to find list of images
@@ -83,7 +84,32 @@ def usage(total_images):
     msg += "Argument must be an integer and between the threshold." 
     return msg   
     
-     
+def check_os():
+    '''
+    Detect system that is running.
+    '''
+    platform = sys.platform
+    if platform.startswith('linux'):
+       print "linux"
+    elif platform.startwith('darwin'):
+       print "macosx"
+    elif platform.startswith('win'):   
+       print "windows"
+
+
+def detect_desktop():
+    '''
+    If os is linux detect the enviroment
+    '''
+    if os.environ.get('DESKTOP_SESSION').startswith('cinnamon'):
+        return "gnome"
+    if os.environ.get('KDE_FULL_SESSION') == 'true':
+        return 'kde'
+    elif os.environ.get('GNOME_DESKTOP_SESSION_ID'):
+        return 'gnome'
+    else:
+        return "Enviroment not supported yet"
+           
 if __name__=='__main__':        
    # create an instance of nasa class and pass to main
    main(sys.argv, list_url)
