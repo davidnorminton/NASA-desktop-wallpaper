@@ -11,14 +11,8 @@ Notes :
 This script works on the command line with the following options:<br />
 <pre>
 <code>
-// some a help menu and show number of possible images to add
- $ python -h
-</code>
-</pre>
-<pre>
-<code>
 // set wallpaper to a specific number<br />
- $ python - n <a number> <br />
+ $ python wallpaper.py -n <a number> <br />
 </code>
 </pre>
 <p>
